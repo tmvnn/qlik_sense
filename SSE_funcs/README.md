@@ -2,7 +2,7 @@
 ## Project Status
 **Experimental**
 
-BASED ON [qcb-qlik-sse](https://github.com/RobWunderlich/qcb-qlik-sse)!
+BASED ON [qcb-qlik-sse](https://github.com/RobWunderlich/qcb-qlik-sse)! You should downloade it first. Then fill the "njs_qcb_qlik_sse_master.ini" config file and put my funtion to function folder.
 
 An implementation of [qlik-sse](https://github.com/miralemd/qlik-sse), a Qlik Server Side Extension written in Javascript. The aim of this implementation is to allow for adding functions through a plugin directory. 
 
