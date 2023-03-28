@@ -2,6 +2,8 @@
 ## Project Status
 **Experimental**
 
+BASED ON [qcb-qlik-sse](https://github.com/RobWunderlich/qcb-qlik-sse)!
+
 An implementation of [qlik-sse](https://github.com/miralemd/qlik-sse), a Qlik Server Side Extension written in Javascript. The aim of this implementation is to allow for adding functions through a plugin directory. 
 
 This is an experimental project intended to explore creation of a "community contributed" Qlik Server Side Extension (SSE). The SSE feature in Qlik is very useful, but it's possible that over time customers may end up running and managing a number of different SSE tasks. This projects aims to explore if a repository of common SSE functions can be developed and deployed.
