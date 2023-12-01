@@ -1,0 +1,29 @@
+// Предполагается, что у вас уже есть загруженная таблица 'YourDataTable'
+LET rowCount = NoOfRows('YourDataTable');
+LET colCount = NoOfFields('YourDataTable');
+
+// Начало HTML-таблицы
+LET htmlTable = '<table><tr>';
+
+// Добавление заголовков столбцов
+FOR i = 0 TO colCount - 1
+    LET colName = FieldName(i, 'YourDataTable');
+    LET htmlTable = htmlTable & '<th>' & colName & '</th>';
+NEXT i
+LET htmlTable = htmlTable & '</tr>';
+
+// Добавление данных
+FOR j = 0 TO rowCount - 1
+    LET htmlTable = htmlTable & '<tr>';
+    FOR k = 0 TO colCount - 1
+        LET colName = FieldName(k, 'YourDataTable');
+        LET cellValue = Peek(colName, j, 'YourDataTable');
+        LET htmlTable = htmlTable & '<td>' & cellValue & '</td>';
+    NEXT k
+    LET htmlTable = htmlTable & '</tr>';
+NEXT j
+
+// Завершение HTML-таблицы
+LET htmlTable = htmlTable & '</table>';
+
+// Теперь переменная htmlTable содержит HTML-код вашей таблицы
